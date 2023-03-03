@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 import 'notification_utils.dart';
@@ -99,6 +100,7 @@ class _MyHomePageState extends State<MyHomePage> {
               channelName: 'nitmgpt test',
               title: _textEditingController.text,
               subTitle: _textEditingController1.text,
+              importance: Importance.max,
             );
           },
           tooltip: 'Increment',
